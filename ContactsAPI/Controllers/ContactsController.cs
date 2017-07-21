@@ -26,11 +26,11 @@ namespace ContactsAPI.Controllers
             _context = context;
         }
         
+
         [Microsoft.AspNetCore.Mvc.HttpGet]
-        public IActionResult Get()
+        public List<Contact> Get()
         {
-            var contacts = _context.Contact.ToList();
-            return Ok(contacts);
+            return _context.Contact.ToList();
 
         }
 
