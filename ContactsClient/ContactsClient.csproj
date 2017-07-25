@@ -68,7 +68,6 @@
   <ItemGroup>
     <Content Include="app\app.component.js" />
     <Content Include="app\app.module.js" />
-    <Content Include="app\styles.css" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
     <Content Include="bs-config.json" />
@@ -97,7 +96,7 @@
   <ItemGroup>
     <TypeScriptCompile Include="app\app.component.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />
-    <TypeScriptCompile Include="main.ts" />
+    <TypeScriptCompile Include="app\main.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
