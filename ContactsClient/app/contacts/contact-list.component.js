@@ -7,20 +7,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var platform_browser_1 = require("@angular/platform-browser");
-var app_component_1 = require("./app.component");
-var contact_list_component_1 = require("./contacts/contact-list.component");
-var AppModule = (function () {
-    function AppModule() {
+var ContactListComponent = (function () {
+    function ContactListComponent() {
     }
-    return AppModule;
+    return ContactListComponent;
 }());
-AppModule = __decorate([
-    core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
-        declarations: [app_component_1.AppComponent, contact_list_component_1.ContactListComponent],
-        bootstrap: [app_component_1.AppComponent]
+ContactListComponent = __decorate([
+    core_1.Component({
+        selector: "pm-contacts",
+        templateUrl: 'app/contacts/contact-list.component.html'
     })
-], AppModule);
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+], ContactListComponent);
+exports.ContactListComponent = ContactListComponent;
+//# sourceMappingURL=contact-list.component.js.map
