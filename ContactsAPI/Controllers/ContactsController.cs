@@ -8,6 +8,7 @@ using System.Web.Http;
 using System.Web.Http.Results;
 using ContactsAPI.Entities;
 using Microsoft.ApplicationInsights.AspNetCore.Extensions;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -17,6 +18,7 @@ using Microsoft.EntityFrameworkCore;
 namespace ContactsAPI.Controllers
 {
     [Microsoft.AspNetCore.Mvc.Route("api/[controller]")]
+    [EnableCors("CorsPolicy")]
     public class ContactsController : Controller
     {
         private readonly ContactsContext _context;
