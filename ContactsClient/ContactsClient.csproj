@@ -97,6 +97,7 @@
   <ItemGroup>
     <TypeScriptCompile Include="app\app.component.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />
+    <TypeScriptCompile Include="app\contacts\contact-filter.pipe.ts" />
     <TypeScriptCompile Include="app\contacts\contact-list.component.ts" />
     <TypeScriptCompile Include="app\contacts\contact.service.ts" />
     <TypeScriptCompile Include="app\contacts\contact.ts" />
