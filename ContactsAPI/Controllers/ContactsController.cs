@@ -18,7 +18,6 @@ using Microsoft.EntityFrameworkCore;
 namespace ContactsAPI.Controllers
 {
     [Microsoft.AspNetCore.Mvc.Route("api/[controller]")]
-    [EnableCors("CorsPolicy")]
     public class ContactsController : Controller
     {
         private readonly ContactsContext _context;
