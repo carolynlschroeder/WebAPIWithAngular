@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var contact_service_1 = require("./contact.service");
-var ContactListComponent = (function () {
+var ContactListComponent = /** @class */ (function () {
     function ContactListComponent(contactService) {
         this.contactService = contactService;
     }
@@ -19,14 +19,14 @@ var ContactListComponent = (function () {
         var _this = this;
         this.contactService.getContacts().subscribe(function (contacts) { return _this.contacts = contacts; });
     };
+    ContactListComponent = __decorate([
+        core_1.Component({
+            selector: "pm-contacts",
+            templateUrl: 'app/contacts/contact-list.component.html'
+        }),
+        __metadata("design:paramtypes", [contact_service_1.ContactService])
+    ], ContactListComponent);
     return ContactListComponent;
 }());
-ContactListComponent = __decorate([
-    core_1.Component({
-        selector: "pm-contacts",
-        templateUrl: 'app/contacts/contact-list.component.html'
-    }),
-    __metadata("design:paramtypes", [contact_service_1.ContactService])
-], ContactListComponent);
 exports.ContactListComponent = ContactListComponent;
 //# sourceMappingURL=contact-list.component.js.map

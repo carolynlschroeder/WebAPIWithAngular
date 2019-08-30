@@ -15,7 +15,7 @@ require("rxjs/add/operator/do");
 require("rxjs/add/operator/catch");
 require("rxjs/add/operator/map");
 require("rxjs/add/observable/throw");
-var ContactService = (function () {
+var ContactService = /** @class */ (function () {
     function ContactService(_http) {
         this._http = _http;
         this._contactsUrl = 'http://localhost:56680/api/contacts';
@@ -24,11 +24,11 @@ var ContactService = (function () {
         return this._http.get(this._contactsUrl)
             .map(function (response) { return response.json(); });
     };
+    ContactService = __decorate([
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.Http])
+    ], ContactService);
     return ContactService;
 }());
-ContactService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [http_1.Http])
-], ContactService);
 exports.ContactService = ContactService;
 //# sourceMappingURL=contact.service.js.map
